@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="vod.css">
+    <link rel="stylesheet" href="lightBox.css">
+    <title>Document</title>
+    <script src="vod-js/lightBox.js"></script>
+    <script defer src="vod-js/appVOD.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="vod-js/vodClass.js"></script>
+</head>
+
+<body>
+    <div class="light_box">
+        <div class="light_box_inside"><img id="id_img"
+                src=""
+                alt="image" class="col-4 float-start me-2">
+            <h2 id="id_light_title">Movie name</h2>
+            <div>Time:<span id="id_time"></span></div>
+            <div>Score:<span id="id_score"></span></div>
+            <div>Year:<span id="id_year"></span></div>
+            <div>Plot:<p id="id_plot"></p>
+            </div><button id="btn_close" class="btn btn-danger">Close</button>
+        </div>
+    </div>
+
+    <div class="strip container-fluid">
+        <div class="container">
+            <h2 class="display-4">VOD app</h2>
+        </div>
+    </div>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="d-flex col-md-4"><input id="id_search_input" placeholder="search for movie/game/series..."
+                    type="search" class="form-control"><button id="search_btn" class="btn btn-warning">Search</button>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <h1 class="display-5 text-center">VOD LIST</h1>
+        <div class="row justify-content-center" id="id_row">
+            <!-- <div class="col-md-3 border p-3">
+                <img src='https://m.media-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SX300.jpg' alt="movie" class="w-75">
+                <h2>MOVE NAME</h2>
+                <h4>year: </h4>
+                <button class="btn btn-dark">mor info</button>
+            </div> -->
+        </div>
+    </main>
+
+
+</body>
+
+</html>
